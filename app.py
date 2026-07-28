@@ -43,8 +43,6 @@ if "player" not in st.session_state:
     }
 
 
-st.title("RPG")
-
 # HP表示
 st.write("HP:", st.session_state.player["HP"])
 
