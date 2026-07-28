@@ -1,5 +1,18 @@
 
 import streamlit as st
+
+st.markdown(
+    """
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+    html, body, [class*="css"] {
+        font-family: 'DotGothic16', sans-serif;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 import pandas as pd
 import random
 
