@@ -335,7 +335,7 @@ def map_event():
 
         st.success("ゴールに到着！")
 
-        if st.button("👹 ラスボスへ"):
+        if st.button("ラスボスへ"):
 
             start_battle(True)
 
@@ -390,7 +390,7 @@ elif st.session_state.mode == "battle":
 
 elif st.session_state.mode == "gameover":
 
-    st.title("💀 ゲームオーバー")
+    st.title("(´-ω-`) ゲームオーバー")
 
     st.error("あなたは倒れてしまった...")
 
