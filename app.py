@@ -93,7 +93,7 @@ df = pd.DataFrame(data)
 # -----------------------------
 # サイドバー
 # -----------------------------
-st.sidebar.title("プレイヤー")
+st.sidebar.title("(˙𐃷˙)")
 
 st.sidebar.write("Lv", player["レベル"])
 st.sidebar.write("HP", f'{player["HP"]}/{player["最大HP"]}')
