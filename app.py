@@ -3,6 +3,9 @@ import streamlit as st
 import pandas as pd
 import random
 
+if "position" not in st.session_state:
+    st.session_state.position = 0
+
 st.set_page_config(page_title="RPG", page_icon="⚔️")
 
 # -----------------------------
