@@ -342,10 +342,10 @@ def map_event():
 
     st.title("🗺️ マップ")
 
-    st.write(f"### {st.session_state.position} / 50 マス")
+    st.write(f"### {st.session_state.position+1} / 50 マス")
 
     # ゴール
-    if st.session_state.position >= 50:
+    if st.session_state.position >= 49:
 
         st.success("ゴールに到着！")
 
