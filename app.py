@@ -1,18 +1,6 @@
 
 import streamlit as st
 
-st.markdown(
-    """
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
-
-    html, body, [class*="css"] {
-        font-family: 'DotGothic16', sans-serif;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
 import pandas as pd
 import random
 
@@ -54,10 +42,6 @@ if "player" not in st.session_state:
         "所持金": 100,
         "位置": 0
     }
-
-
-# HP表示
-st.write("HP:", st.session_state.player["HP"])
 
 # マップ表示
 position = st.session_state.player["位置"]
