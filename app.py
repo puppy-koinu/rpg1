@@ -20,7 +20,13 @@ if "player" not in st.session_state:
     }
 
 
-position = 5
+st.title("RPG")
+
+# HP表示
+st.write("HP:", st.session_state.player["HP"])
+
+# マップ表示
+position = st.session_state.player["位置"]
 max_position = 20
 
 map_bar = "□" * position + "(˙𐃷˙)" + "□" * (max_position - position - 1)
