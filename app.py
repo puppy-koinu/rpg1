@@ -8,6 +8,25 @@ if "position" not in st.session_state:
 
 st.set_page_config(page_title="RPG", page_icon="⚔️")
 
+if "mode" not in st.session_state:
+    st.session_state.mode = "title"
+if st.session_state.mode == "title":
+
+    st.markdown(
+        """
+        <h1 style="text-align:center;">
+        ⚔️ 勇者(˙𐃷˙)の大冒険 ⚔️
+        </h1>
+        """,
+        unsafe_allow_html=True
+    )
+
+    st.write("")
+
+    if st.button("冒険を始める"):
+        st.session_state.mode = "map"
+        st.rerun()
+
 # -----------------------------
 # 初期化
 # -----------------------------
@@ -70,7 +89,7 @@ data = {
         "(˙𐃷˙(˙𐃷˙)˙𐃷˙)"
     ],
     "HP": [20, 30, 10, 5, 40, 150],
-    "攻撃": [3, 7, 5, 15, 20, 50],
+    "攻撃": [3, 7, 5, 15, 20, 25],
     "経験値": [15, 25, 10, 15, 45, 80]
 }
 
