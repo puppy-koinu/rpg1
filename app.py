@@ -169,7 +169,7 @@ def battle():
                 d = random.randint(1, enemy["攻撃"])
 
                 total += d
-                player["HP"] -= d
+                st.session_state.player["HP"] -= damage
 
             st.error(
                 f"🐺 ケルベロスの2連攻撃！ {total}ダメージ！"
@@ -179,7 +179,7 @@ def battle():
 
             d = random.randint(1, enemy["攻撃"])
 
-            player["HP"] -= d
+            st.session_state.player["HP"] -= damage
 
             st.error(f"{d}ダメージ！")
 
