@@ -209,7 +209,7 @@ def battle():
                 st.session_state.player["HP"] -= damage
 
             st.error(
-                f"🐺 ケルベロスの2連攻撃！ {total}ダメージ！"
+                f"ケルベロスの2連攻撃！ {total}ダメージ！"
             )
 
         else:
