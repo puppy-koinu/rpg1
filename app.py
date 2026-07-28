@@ -19,6 +19,14 @@ if "player" not in st.session_state:
         "所持金": 100
     }
 
+
+position = 5
+max_position = 20
+
+map_bar = "□" * position + "(˙𐃷˙)" + "□" * (max_position - position - 1)
+
+st.write(map_bar)
+
 if "map" not in st.session_state:
     st.session_state.map = random.choices(
         ["戦闘", "ショップ", "宝箱", "回復", "何もない"],
