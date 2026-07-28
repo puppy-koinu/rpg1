@@ -203,7 +203,7 @@ def battle():
                 d = random.randint(1, enemy["攻撃"])
 
                 total += d
-                st.session_state.player["HP"] -= damage
+                st.session_state.player["HP"] -= d
 
             st.error(
                 f"ケルベロスの2連攻撃！ {total}ダメージ！"
