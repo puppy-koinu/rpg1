@@ -206,7 +206,7 @@ def battle():
                 st.session_state.player["HP"] -= d
 
             st.error(
-                f"ケルベロスの2連攻撃！ {total}ダメージ！"
+                f"(˙𐃷˙(˙𐃷˙)˙𐃷˙)の2連攻撃！ {total}ダメージ！"
             )
 
         else:
@@ -421,7 +421,7 @@ elif st.session_state.mode == "clear":
 
     st.balloons()
 
-    st.success("ケルベロスを倒した！")
+    st.success("(˙𐃷˙(˙𐃷˙)˙𐃷˙)を倒した！")
 
     st.write("### 最終ステータス")
 
